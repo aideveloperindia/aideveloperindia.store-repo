@@ -26,8 +26,8 @@ const Navigation = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md border-b border-secondary-200 z-50">
       <div className="container-width">
-        <div className="flex items-center justify-between h-20 sm:h-24 px-4 sm:px-6">
-          {/* Logo */}
+        <div className="relative flex items-center justify-center md:justify-between h-20 sm:h-24 px-4 sm:px-6">
+          {/* Logo - Centered on mobile, left-aligned on desktop */}
           <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
             <Image
               src="/logo.png"
@@ -55,10 +55,10 @@ const Navigation = () => {
             ))}
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Button - Positioned absolutely on the right */}
           <button
             onClick={toggleMenu}
-            className="md:hidden p-3 rounded-lg bg-secondary-50 hover:bg-primary-100 border-2 border-transparent hover:border-primary-200 transition-all duration-300 transform hover:scale-105 touch-manipulation shadow-sm hover:shadow-md"
+            className="md:hidden absolute right-4 top-1/2 transform -translate-y-1/2 p-3 rounded-lg bg-secondary-50 hover:bg-primary-100 border-2 border-transparent hover:border-primary-200 transition-all duration-300 hover:scale-105 touch-manipulation shadow-sm hover:shadow-md"
             aria-label="Toggle mobile menu"
           >
             {isMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
