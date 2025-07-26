@@ -27,16 +27,7 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md border-b border-secondary-200 z-50">
       <div className="container-width">
         <div className="flex items-center justify-between h-20 sm:h-24 px-4 sm:px-6">
-          {/* Logo */}
-          <Link href="/" className="flex items-center hover:opacity-80 transition-opacity ml-16">
-            <Image
-              src="/workshops photos/A  logo.png"
-              alt="Aditya Nandagiri Logo"
-              width={72}
-              height={72}
-              className="h-16 w-16 sm:h-20 sm:w-20 rounded-lg shadow-sm"
-            />
-          </Link>
+          {/* Logo removed */}
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-4">
