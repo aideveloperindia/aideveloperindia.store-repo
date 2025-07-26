@@ -30,7 +30,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center hover:opacity-80 transition-opacity ml-16">
             <Image
-              src="/logo.png"
+              src="/workshops photos/A  logo.png"
               alt="Aditya Nandagiri Logo"
               width={72}
               height={72}
