@@ -74,16 +74,16 @@ const Navigation = () => {
               exit={{ opacity: 0, height: 0 }}
               className="md:hidden border-t border-secondary-200 bg-white"
             >
-              <div className="py-6 space-y-3">
+              <div className="py-2">
                 {navItems.map((item) => (
                   <Link
                     key={item.href}
                     href={item.href}
                     onClick={() => setIsMenuOpen(false)}
-                    className={`block px-6 py-4 text-base font-semibold rounded-xl mx-2 transition-all duration-300 transform hover:scale-105 touch-manipulation ${
+                    className={`mobile-menu-item text-base font-semibold rounded-lg mx-2 my-1 transition-all duration-300 touch-manipulation ${
                       router.pathname === item.href
                         ? 'bg-primary-600 text-white shadow-lg'
-                        : 'text-secondary-700 hover:bg-primary-50 hover:text-primary-700 active:bg-primary-100 shadow-sm hover:shadow-md'
+                        : 'text-secondary-700 hover:bg-primary-50 hover:text-primary-700 active:bg-primary-100'
                     }`}
                   >
                     {item.label}
