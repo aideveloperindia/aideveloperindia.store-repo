@@ -15,12 +15,12 @@ const Book = () => {
       {/* Hero Section */}
       <section className="section-padding bg-gradient-to-br from-primary-50 to-secondary-100 pb-24">
         <div className="container-width">
-                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
-              className="flex flex-col justify-start"
+              className="flex flex-col justify-start order-2 lg:order-1"
             >
               <div className="text-center lg:text-left">
                 <motion.div
@@ -32,7 +32,7 @@ const Book = () => {
                   📚 Spiritual Philosophy
                 </motion.div>
                 
-                <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-bold text-secondary-900 mb-4 leading-tight">
+                <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-secondary-900 mb-4 leading-tight">
                   Apavarga
                 </h1>
                 
@@ -40,23 +40,23 @@ const Book = () => {
                   "You Shall See God"
                 </p>
                 
-                <p className="text-base sm:text-lg text-secondary-600 mb-8 leading-relaxed px-1">
+                <p className="text-sm sm:text-base md:text-lg text-secondary-600 mb-8 leading-relaxed px-1">
                   A profound exploration of spirituality and modern science, bridging ancient wisdom 
                   with contemporary understanding to reveal the path to divine realization.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 px-1">
-                  <button className="btn-primary inline-flex items-center gap-2">
+                  <button className="btn-primary inline-flex items-center justify-center gap-2">
                     <FiShoppingCart size={20} />
                     Buy Now
                   </button>
-                  <button className="btn-secondary inline-flex items-center gap-2">
+                  <button className="btn-secondary inline-flex items-center justify-center gap-2">
                     <FiDownload size={20} />
                     Download Sample
                   </button>
                 </div>
 
-                <div className="flex items-center gap-6 text-sm text-secondary-500">
+                <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-6 text-sm text-secondary-500">
                   <div className="flex items-center gap-1">
                     <FiStar className="text-yellow-500 fill-current" />
                     <FiStar className="text-yellow-500 fill-current" />
@@ -65,7 +65,7 @@ const Book = () => {
                     <FiStar className="text-yellow-500 fill-current" />
                     <span className="ml-1">5.0 (Coming Soon)</span>
                   </div>
-                  <span>•</span>
+                  <span className="hidden sm:inline">•</span>
                   <span>Available in English</span>
                 </div>
               </div>
@@ -75,13 +75,13 @@ const Book = () => {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="flex justify-center lg:justify-end items-start"
+              className="flex justify-center lg:justify-end items-start order-1 lg:order-2"
             >
-                              <div className="relative">
+              <div className="relative">
                 {/* Interactive Book Cover with Flip Effect */}
-                <div className="relative w-72 sm:w-80 h-auto max-w-sm mx-auto mt-0 lg:mt-0">
+                <div className="relative w-48 xs:w-56 sm:w-64 md:w-72 lg:w-80 h-auto max-w-sm mx-auto mt-0 lg:mt-0">
                   <div 
-                    className="book-container cursor-pointer transform rotate-3 hover:rotate-0 transition-transform duration-500"
+                    className="book-container cursor-pointer transform rotate-1 hover:rotate-0 transition-transform duration-500"
                     onClick={() => setIsFlipped(!isFlipped)}
                     onMouseEnter={() => setIsFlipped(true)}
                     onMouseLeave={() => setIsFlipped(false)}
@@ -121,7 +121,7 @@ const Book = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 2 }}
-                    className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 text-center z-10"
+                    className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-center z-10"
                   >
                     <p className="text-xs text-secondary-500 bg-white px-3 py-1 rounded-full shadow-sm inline-block">
                       <span className="hidden sm:inline">🖱️ Hover to see back cover</span>
@@ -134,7 +134,7 @@ const Book = () => {
                 <motion.div
                   animate={{ y: [0, -10, 0] }}
                   transition={{ duration: 3, repeat: Infinity }}
-                  className="absolute -top-4 -right-4 w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center text-2xl"
+                  className="absolute -top-2 -right-2 w-12 h-12 sm:w-16 sm:h-16 bg-yellow-100 rounded-full flex items-center justify-center text-lg sm:text-2xl"
                 >
                   ✨
                 </motion.div>

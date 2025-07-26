@@ -1,0 +1,9 @@
+{
+  "name": "aideveloperindia-store-repo",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ]
+} 
