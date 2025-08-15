@@ -66,6 +66,17 @@ const Videos = () => {
       views: '12K+',
       externalUrl: 'https://www.facebook.com/share/r/1CAKhLXTqt/',
       isExternal: true
+    },
+    {
+      id: 'video7',
+      title: 'Innovator Recognition ID Card Presentation by Cabinet Minister',
+      description: 'Cabinet Minister, IT, Telangana Government presenting the official Innovator Recognition ID Card (TGIC/KR/INN/2025/007) to Aditya Nandagiri.',
+      youtubeId: '',
+      category: 'awards',
+      duration: '3:00',
+      views: '5K+',
+      externalUrl: 'https://www.facebook.com/share/v/17BjW2dSBK/',
+      isExternal: true
     }
   ];
 

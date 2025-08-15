@@ -34,14 +34,30 @@ const Home = () => {
               Aditya Nandagiri
             </motion.h1>
             
-            <motion.p 
-              className="text-lg xs:text-xl sm:text-xl md:text-2xl text-secondary-700 mb-8 max-w-3xl mx-auto leading-relaxed px-4"
+            <motion.div 
+              className="mb-8 max-w-4xl mx-auto px-4 text-center"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
             >
-              "Recognized Innovator | Ethical Hacker | Founder | AI Developer"
-            </motion.p>
+              <div className="text-lg xs:text-xl sm:text-xl md:text-2xl text-secondary-700 leading-relaxed">
+                <div className="flex flex-wrap justify-center items-start gap-2 sm:gap-4">
+                  <div className="text-center">
+                    <span>"Recognized Innovator</span>
+                    <div className="text-xs font-mono text-primary-600 mt-1">(TGIC/KR/INN/2025/007)</div>
+                  </div>
+                  <span className="self-start mt-0">|</span>
+                  <div className="text-center">
+                    <span>Ethical Hacker</span>
+                    <div className="text-xs font-mono text-green-600 mt-1">(ECC36596056249)</div>
+                  </div>
+                  <span className="self-start mt-0">|</span>
+                  <span>Founder</span>
+                  <span className="self-start mt-0">|</span>
+                  <span>AI Developer"</span>
+                </div>
+              </div>
+            </motion.div>
 
             <motion.p 
               className="text-base sm:text-lg text-secondary-600 mb-12 max-w-2xl mx-auto px-4 leading-relaxed"
