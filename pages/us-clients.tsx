@@ -88,7 +88,7 @@ const USClientsPage = () => {
       keywords="AI websites, US business websites, social media content, web development, AI automation, PWA, static websites, US clients"
     >
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-red-700 via-blue-800 to-blue-900 overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 left-10 w-32 h-32 bg-yellow-400 rounded-full blur-3xl"></div>
@@ -109,7 +109,7 @@ const USClientsPage = () => {
               transition={{ delay: 0.2, duration: 0.8 }}
             >
               AI-Powered Websites & Social Media
-              <span className="block text-yellow-400">for US Businesses</span>
+              <span className="block text-red-300">for US Businesses</span>
             </motion.h1>
             
             <motion.p 
@@ -129,13 +129,13 @@ const USClientsPage = () => {
             >
               <button 
                 onClick={handleScrollToContact}
-                className="bg-yellow-500 hover:bg-yellow-600 text-blue-900 px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center gap-2"
+                className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center gap-2"
               >
                 <FiMessageCircle size={24} />
                 Book a Free Consultation
               </button>
               
-              <Link href="#services" className="bg-transparent border-2 border-white hover:bg-white hover:text-blue-900 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 inline-flex items-center gap-2">
+              <Link href="#services" className="bg-transparent border-2 border-white hover:bg-white hover:text-red-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 inline-flex items-center gap-2">
                 <FiArrowRight size={20} />
                 View Services
               </Link>
@@ -412,7 +412,7 @@ const USClientsPage = () => {
       </section>
 
       {/* Final CTA */}
-      <section id="contact-section" className="section-padding bg-gradient-to-r from-blue-900 to-blue-800 text-white">
+      <section id="contact-section" className="section-padding bg-gradient-to-r from-red-700 via-blue-800 to-blue-900 text-white">
         <div className="container-width text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -421,7 +421,7 @@ const USClientsPage = () => {
           >
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
               Your Website & Marketing,
-              <span className="block text-yellow-400">Supercharged with AI</span>
+              <span className="block text-red-300">Supercharged with AI</span>
             </h2>
             
             <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
@@ -432,7 +432,7 @@ const USClientsPage = () => {
               <div>
                 <button 
                   onClick={handleWhatsAppClick}
-                  className="bg-yellow-500 hover:bg-yellow-600 text-blue-900 px-12 py-4 rounded-lg font-bold text-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center gap-3"
+                  className="bg-red-600 hover:bg-red-700 text-white px-12 py-4 rounded-lg font-bold text-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center gap-3"
                 >
                   <FiMessageCircle size={24} />
                   Let's Get Started

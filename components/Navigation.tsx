@@ -12,8 +12,8 @@ const Navigation = () => {
   const navItems = [
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About' },
-    { href: '/clients', label: 'Business', region: 'India', flag: '🇮🇳' },
-    { href: '/us-clients', label: 'Business', region: 'USA', flag: '🇺🇸' },
+    { href: '/clients', label: 'Business', region: 'India' },
+    { href: '/us-clients', label: 'Business', region: 'USA' },
     { href: '/innovations', label: 'Innovations' },
     { href: '/media', label: 'Media' },
     { href: '/spirituality', label: 'Spirituality' },
@@ -37,12 +37,12 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-2">
+          <div className="hidden md:flex items-center space-x-3">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`px-3 py-2 text-sm font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 ${
+                className={`px-4 py-3 text-base font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 ${
                   router.pathname === item.href
                     ? 'bg-primary-600 text-white shadow-lg'
                     : 'text-secondary-700 hover:bg-primary-50 hover:text-primary-700 hover:shadow-md'
@@ -52,7 +52,6 @@ const Navigation = () => {
                   <span className="flex items-center gap-1">
                     <span>{item.label}</span>
                     <span className="text-xs opacity-75">({item.region})</span>
-                    <span className="text-xs">{item.flag}</span>
                   </span>
                 ) : (
                   item.label
@@ -96,7 +95,6 @@ const Navigation = () => {
                       <span className="flex items-center gap-2">
                         <span>{item.label}</span>
                         <span className="text-sm opacity-75">({item.region})</span>
-                        <span className="text-sm">{item.flag}</span>
                       </span>
                     ) : (
                       item.label
